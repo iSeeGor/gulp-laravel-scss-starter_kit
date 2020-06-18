@@ -1,0 +1,59 @@
+/*============================================================================
+	#Slider
+==============================================================================*/
+.slider {
+
+	padding: 95px 0 160px;
+
+	.container {
+		position: relative;
+	}
+
+	.section-deco-name {
+		position: absolute;
+		top: -130px;
+		right: -20px;
+	}
+
+	&__header {
+		margin-bottom: 60px;
+	}
+
+	&__title {
+		font-size: 3.0rem;
+		line-height: 3.6rem;
+		font-family: $fontSecond;
+		margin-bottom: 22px;
+	}
+
+	&__control {
+		.button-prev {
+			margin-right: 36px;
+		}
+
+		.swiper-button-disabled {
+			opacity: .3;
+		}
+	}
+
+	&__body {
+		padding: 0 20px;
+	}
+
+	&__slide {
+		width: auto;
+	}
+
+	img {
+		height: 60vh;
+	}
+
+}
+
+.lg-actions .lg-next, .lg-actions .lg-prev, .lg-toolbar .lg-icon , .lg-outer .lg-toogle-thumb, #lg-counter{
+	color: #cfa582 ;
+}
+
+.lg-backdrop.in {
+	opacity: 0.9;
+}

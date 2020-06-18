@@ -1,0 +1,174 @@
+@media (min-width: 992px) and (max-width: 1199.98px) {
+	.factories-page__video-block .video-block {
+		height: 300px;
+	}
+
+	.factories-page__video-block {
+		.button-play {
+			height: 114px;
+			width: 114px;
+		}
+	}
+} 
+
+@media (max-width: 1199.98px) { 
+	.factories-page__slider.slider {
+		padding-top: 0;
+		padding-bottom: 90px;
+	}
+
+	.factories-page__carousele {
+		padding: 90px 0 60px;
+	}
+}
+
+@media (max-width: 991.98px) {
+	.factories-intro {
+		padding-bottom: 90px;
+
+		&__header {
+			flex-wrap: wrap;
+			padding-top: 40px;
+			padding-bottom: 60px;
+
+			&-left,
+			&-right {
+				flex: 0 0 100%;
+				max-width: 100%;
+			}
+
+		}
+
+		&__header-right {
+			padding: 0 15px;
+		}
+
+		&__title {
+			max-width: 100%;
+			margin-bottom: 30px;
+		}
+
+		&__logo {
+			margin-left: 0;
+		}
+
+		&__content {
+			flex-wrap: wrap;
+
+			&-left,
+			&-right {
+				flex: 0 0 100%;
+				max-width: 100%;
+
+				.text-block {
+					max-width: 100%;
+				}
+			}
+
+			&-left {
+				margin-bottom: 35px;
+			}
+		}
+	}
+
+	.factories-page__video-block {
+
+		.container::before {
+			display: none;
+		}
+
+		.block-title {
+			margin-bottom: 30px;
+		}
+
+		.text-block {
+			padding: 0;
+			margin-bottom: 30px;
+		}
+	}
+	
+	.factories-page__text-block {
+		.container::before {
+			display: none;
+		}
+	}
+
+}
+
+@media (max-width: 767.98px) { 
+	.factories-intro {
+		padding-bottom: 70px;
+	}
+	
+	.factories-page__video-block {
+		padding: 70px 0;
+	}
+
+	.factories-page__slider.slider {
+		padding-bottom: 70px;
+	}
+
+	.factories-page__text-block .text-block {
+		margin-bottom: 70px;
+	}
+
+	.factories-page__carousele {
+		padding: 70px 0 40px;
+	}
+}
+
+@media (max-width: 575.98px) { 
+
+	.factories-intro__header {
+		padding-top: 60px;
+	}
+	
+	.factories-intro__title {
+		padding-top: 0;
+	}
+}
+
+@media (max-width: 475.98px) { 
+
+	.factories-intro {
+
+		&__header {
+
+			&-right {
+				padding: 0;
+			}
+		}
+
+		&__logo {
+			margin: 0 auto;
+			max-width: 410px;
+			width: 100%;
+		}
+
+		&__logo-image {
+			padding: 0 40px;
+		}
+	}
+}
+
+@media (max-width: 414px) {
+
+	.factories-intro {
+
+		&__header {
+			padding-bottom: 40px;
+		}
+
+		&__title {
+			font-size: 3.2rem;
+			line-height: 4.2rem;
+
+			.factorie-name {
+				font-size: 5rem;
+				line-height: 5.6rem;
+			}
+		}
+	}
+}
+
+

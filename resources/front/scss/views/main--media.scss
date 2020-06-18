@@ -1,0 +1,19 @@
+// == layouts =====================
+@import 'layouts/header--media.scss'; 						// Header
+@import 'layouts/footer--media.scss'; 						// Footer
+
+
+// == Templates =====================
+@import 'templates/hero--media.scss'; 						// Hero
+@import 'templates/catalog-carousele--media.scss'; 			// Catalog Carousele
+@import 'templates/slider--media.scss'; 					// Slider
+@import 'templates/transfer-block--media.scss'; 			// Transfer Block
+
+
+// == Pages =====================
+@import 'pages/home--media.scss'; 							// Home Page
+@import 'pages/transfer--media.scss'; 						// Transfer Page
+@import 'pages/factories--media.scss'; 						// Factories Page
+@import 'pages/blog--media.scss'; 							// Blog Page
+@import 'pages/post--media.scss'; 							// Post Page
+@import 'pages/prod-page--media.scss'; 						// Product Page

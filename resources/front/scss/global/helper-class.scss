@@ -1,0 +1,136 @@
+/*============================================================================
+	#Helper Classes
+==============================================================================*/
+.prata-font {
+	font-family: $fontSecond;
+}
+
+.container__no-padding {
+	padding-left: 0;
+	padding-right: 0; 
+}
+
+.no-gutters {
+	margin-right: 0;
+	margin-left: 0;
+  
+	> .col,
+	> [class*="col-"] {
+		padding-right: 0;
+		padding-left: 0;
+	}
+}
+
+.fieldset {
+	border: 0;
+	padding: 0;
+	margin: 0;
+}
+
+.link {
+	color: red;
+	text-decoration: none;
+
+	&:active, &:visited {
+		color: red;
+	}
+
+}
+.heading-title {
+	font-family: Arial, Helvetica, sans-serif;
+	font-weight: bold;
+	margin: 0 20px 0 0;
+	font-size: 3.0rem;
+	line-height: 4.8rem;
+
+	&.deco-letter {
+
+		&::first-letter {
+			color: orange;
+		}
+	}
+
+}
+
+@media (max-width: 414px){
+	.heading-title {
+		font-size: 2.6rem;
+		line-height: 4.2rem;
+	}
+}
+
+/* Country Flags
+ ------------------------------------------------------------*/
+.country-flag {
+	// vertical-align: middle;
+
+	&__icon {
+		width: 30px;
+	}
+} 
+
+ /* iframe video block
+ ------------------------------------------------------------*/
+ .b-iframe {
+
+	&__container {
+		overflow: hidden;
+		// Calculated from the aspect ration of the content (in case of 16:9 it is 9/16= 0.5625)
+		padding-top: 56.25%;
+		position: relative;
+	}
+
+	iframe {
+		border: 0;
+		height: 100%;
+		left: 0;
+		position: absolute;
+		top: 0;
+		width: 100%;
+	 }
+ }
+
+
+
+
+
+ /* ArtSites
+ ------------------------------------------------------------*/
+ .ArtSites {
+	 display: flex;
+	 align-items: center;
+
+	 &__text {
+		 width: 130px;
+		 margin-right: 40px;
+	 }
+ }
+
+
+.AttachFile {
+	label span {
+		margin-right: 30px;
+	}
+} 
+.AttachFile__del {
+	color: red;
+	display: inline-block;
+	position: relative;
+	line-height: 1.5;
+	cursor: pointer;
+
+	&::after {
+		content: '';
+		position: absolute;
+		bottom: 4px;
+		left: 0;
+		height: 1px;
+		width: 100%;
+		background: red;
+	}
+
+	&:hover::after {
+		display: none;
+	}
+	
+}

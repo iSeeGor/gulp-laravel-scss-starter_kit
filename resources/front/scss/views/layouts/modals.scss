@@ -1,0 +1,97 @@
+/*============================================================================
+	#Modals
+==============================================================================*/
+
+.mfp-bg {
+	background: #cfa482;
+	opacity: 0.9;
+}
+
+.modals {
+	display: none;
+
+}
+
+.modal {
+
+	max-width: 540px;
+	margin: 30px auto;
+	position: relative;
+	z-index: 1;
+
+	&::before {
+		content: '';
+		height: 100%;
+		width: calc(100% + 60px);
+		left: -30px;
+		top: 100px;
+		background: url('/assets/images/theme/modal-deco.svg') repeat center/cover;
+		position: absolute;
+		z-index: -1;
+	}
+
+	&::after {
+		content: '';
+		position: absolute;
+		width: 100%;
+		height: 26px;
+		background: $fontColorSecond;
+		left: 0;
+		bottom: -26px;
+	}
+
+	&__close {
+		top: -17px;
+		right: -17px;
+		position: absolute;
+		width: 34px;
+		height: 34px;
+		opacity: 1 !important;
+
+		.icon-close {
+			width: 34px;
+			height: 34px;
+			transition: fill 0.2s;
+		}
+
+		&:hover {
+			.icon-close {
+				fill: $fontColorSecond;
+			}
+		}
+
+		&:active {
+			padding: 0 !important;
+			margin: 0 !important;
+		}
+	}
+}
+
+.m-success {
+	.block-form__header {
+		margin-bottom: 30px;
+	}
+}
+
+@media (max-width: 630px){
+
+	.modal {
+
+		&::before {
+			display: none;
+		}
+
+		&__close {
+			top: 10px;
+			right: 10px;
+		}
+	}
+}
+
+@media (max-width: 540px) {
+
+	.modal__close .icon-close {
+		width: 24px;
+		height:24px;
+	}
+}

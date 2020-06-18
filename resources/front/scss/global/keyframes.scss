@@ -1,0 +1,33 @@
+/*--------------------------------------------------------------
+# Animations
+--------------------------------------------------------------*/
+.mfp-slideInDown {
+    animation-duration: 800ms;
+    animation-fill-mode: both;
+    animation-name: slideInUp;
+}
+@keyframes sub-menu__enter {
+    from {
+        opacity: 0;
+        transform: scaleY(0.98) translateY(10px);
+    }
+    to {
+        opacity: 1;
+        transform: none;
+    }
+}
+@keyframes sub-menu__fade {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes bounce-link {
+    0%   { transform: translateY(0); }
+    60%   { transform: translateY(7px); }
+    100%   { transform: translateY(0); }
+        
+}

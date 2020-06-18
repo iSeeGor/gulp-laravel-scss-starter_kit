@@ -1,0 +1,33 @@
+@media (max-width: 991.98px) {
+	.post-thumb {
+		padding: 0;
+	}
+
+	.post__header {
+		padding-top: 10px;
+	}
+
+	.post-header__title {
+		font: 2.6rem/3.2rem;
+	}
+
+	.post__typography {
+		.responsive-iframe iframe {
+			width: 100%;
+		}
+
+		img {
+			padding: 0;
+		}
+	}
+}
+
+@media (max-width: 767.98px) {
+	.post__content {
+		padding: 40px 0 40px;
+	}
+	
+	.post__share {
+		margin-top: 40px;
+	}
+}

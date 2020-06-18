@@ -1,0 +1,71 @@
+/*--------------------------------------------------------------
+# Forms
+--------------------------------------------------------------*/
+@media (max-width: 992px) {
+	input,
+	textarea {
+		font-size: 16px;
+	}
+}
+
+:focus {
+    // outline: 1px dotted #aaa;
+    outline: 0;
+}
+
+// button,
+input[type="button"],
+input[type="reset"],
+input[type="submit"] {
+	border: 1px solid;
+	border-color: #ccc #ccc #bbb;
+	border-radius: 3px;
+	background: #e6e6e6;
+	color: rgba(0, 0, 0, 0.8);
+	font-size: 1rem;
+	line-height: 1;
+	padding: .6em 1em .4em;
+}
+
+// button:hover,
+input[type="button"]:hover,
+input[type="reset"]:hover,
+input[type="submit"]:hover {
+    border-color: #ccc #bbb #aaa;
+}
+
+// button:active, button:focus,
+input[type="button"]:active,
+input[type="button"]:focus,
+input[type="reset"]:active,
+input[type="reset"]:focus,
+input[type="submit"]:active,
+input[type="submit"]:focus {
+    border-color: #aaa #bbb #bbb;
+}
+
+select {
+	border: 1px solid #ccc;
+}
+
+textarea {
+	width: 100%;
+}
+
+
+.main-form {
+
+	.form__row {
+		margin-bottom: 52px;
+	}
+
+	em.error {
+		color: red;
+		font-style: italic;
+		font-size: 12px;
+		display: inline-block;
+		padding-left: 6px;
+		margin-top: 4px;
+	}
+	
+}

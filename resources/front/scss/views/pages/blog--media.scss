@@ -1,0 +1,173 @@
+@media (max-width: 1199.98px) {
+	.blog-head {
+		padding: 90px 0 15px;
+	}
+
+	.blog-nav {
+
+		&__list {
+			padding: 18px;
+		}
+
+		&__item {
+			margin: 10px 18px;
+		}
+	}
+
+	.post-card {
+
+		&__media {
+			flex: 0 0 46%;
+			max-width: 46%;
+		}
+
+		&__date {
+			flex: 0 0 30%;
+			max-width: 30%;
+		}
+	}
+
+	.blog__pagination {
+		padding-bottom: 60px;
+	}
+}
+
+@media (max-width: 991.98px) {
+	.blog {
+		padding-bottom: 40px;
+	}
+
+	.blog-head {
+		margin-left: 60px;
+	}
+
+	.blog-posts {
+		padding:  70px 0 30px;
+
+		&__list {
+			display: flex;
+			flex-wrap: wrap;
+			margin: 0 -15px;
+		}
+
+		&__item {
+			margin-bottom: 30px;
+		}
+	}
+
+	.post-card {
+		flex: 0 0 50%;
+		max-width: 50%;
+		padding: 0 15px;
+		flex-direction: column;
+		min-height: auto;
+
+		&__media {
+			flex: 1 1 100%;
+			max-width: 100%;
+			max-height: 230px;
+
+			&::before {
+				display: none;
+			}
+		}
+
+		&__media-link {
+			padding-top: 70%;
+		}
+
+		&__body {
+			// flex-direction: column;
+			flex-wrap: wrap;
+			margin-right: 0;
+			padding-top: 25px;
+			display: block;
+		}
+
+		&__date,
+		&__content {
+			flex: 0 0 100%;
+			max-width: 100%;
+		}
+
+		&__content {
+			display: flex;
+			flex-direction: column-reverse;
+		}
+
+		&__title {
+			font-size: 2.2rem;
+		}
+	}
+}
+
+@media (max-width: 767.98px) {
+	.blog-head__title {
+		font-size: 3.2rem;
+		line-height: 4.4rem;
+	}
+
+	.post-card {
+		flex: 0 0 100%;
+		max-width: 100%;
+
+		&__media-link {
+			padding-top: 56%;
+		}
+
+		&__media {
+			max-height: inherit;
+		}
+	}
+
+	.pagination__link,
+	.pagination__item.separator {
+		padding: 10px 24px;
+	}
+
+	.pagination__item.next {
+		padding-left: 30px;
+	}
+
+	.pagination__item.prev {
+		padding-right: 30px;
+	}
+
+}
+
+@media (max-width: 575.98px) {
+
+	.blog-head {
+		padding: 50px 0 15px;
+	}
+
+	.blog-nav__list {
+		flex-direction: column;
+	}
+
+	.blog-nav__item {
+		margin: 10px 0px;
+	}
+
+	.blog-posts {
+		padding: 50px 0;
+	}
+}
+
+@media (max-width: 414px) {
+	.post-card__media-link {
+		padding-top: 70%;
+	}
+}
+
+@media (max-width: 375px) {
+
+	.blog-head {
+		padding: 50px 0 15px;
+	}
+
+	.post-card__title-link {
+		-webkit-line-clamp: 4;
+		max-height: 120px;
+	}
+}

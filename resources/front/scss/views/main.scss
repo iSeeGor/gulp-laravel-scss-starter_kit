@@ -1,0 +1,21 @@
+// == layouts =====================
+@import 'layouts/root.scss'; 		// Root
+@import 'layouts/header.scss'; 		// Header
+@import 'layouts/footer.scss'; 		// Footer
+@import 'layouts/modals.scss'; 		// Modals
+
+// == Pages =====================
+@import 'pages/home.scss';  			// Home Page
+@import 'pages/transfer.scss';  		// Transfer Page
+@import 'pages/factories.scss';  		// Factories Page
+@import 'pages/blog.scss';  			// Blog Page
+@import 'pages/post.scss';  			// Post Page
+@import 'pages/prod-page.scss';  		// Prod Page
+@import 'pages/404.scss';  				// 404 Page
+
+// == Templates =====================
+@import 'templates/hero.scss'; 					// Hero
+@import 'templates/preloader.scss'; 			// Preloader
+@import 'templates/catalog-carousele.scss'; 	// Catalog Carousele
+@import 'templates/slider.scss'; 				// Slider
+@import 'templates/transfer-block.scss'; 		// Transfer Block

@@ -1,0 +1,196 @@
+/*============================================================================
+	#Buttons
+==============================================================================*/
+button:active {
+}
+
+.button {
+    display: inline-block;
+    border: none;
+    padding: 0;
+    background: transparent;
+    text-decoration: none;
+    color: inherit;
+    cursor: pointer;
+}
+
+.button_primary {
+    font-size: 1.7rem;
+    color: $fontColorSecond;
+    font-family: $fontSecond;
+    line-height: 1;
+    letter-spacing: 0.075em;
+    padding: 20px 30px;
+    position: relative;
+    z-index: 1;
+
+    &::before,
+    &::after {
+        position: absolute;
+        left: 0;
+        content: '';
+        z-index: -1;
+        background: $fontColorSecond;
+        transition: width 0.5s;
+
+    }
+
+    &::before {
+        top: 0;
+        height: 100%;
+        width: 80px;
+        opacity: 0.3;
+        
+    }
+
+    &::after {
+        height: 3px;
+        width: 86px;
+        bottom: 0;
+        transition-delay: 0.1s;
+    }
+
+    &:hover::before,
+    &:hover::after {
+        width: 100%;
+    }
+    
+}
+
+.button-prev,
+.button-next {
+    position: relative;
+    width: 16px;
+    height: 28px;
+    
+    span,
+    &::before,
+    &::after {
+        background: black;
+        content: '';
+        display: block;
+        width: 20px;
+        height: 2px;
+        position: absolute;
+        top: calc(50% - (2px / 2));
+        left: 0;
+        transform-origin: left 50%;
+    }
+
+    &::before {
+        transform: rotate(-45deg);
+        transition: left 0.3s 0.05s;
+    }
+
+    &::after {
+        transform: rotate(45deg);
+        transition: left 0.3s 0.05s;
+    }
+
+    span {
+        width: 0;
+        transition: width 0.3s, left 0.3s 0.05s;
+    }
+}
+
+.button-next {
+
+    span,
+    &::before,
+    &::after {
+        left: auto;
+        right: 0;
+        transform-origin: right 50%;
+    }
+    
+    &::before {
+        transition: right 0.3s 0.05s;
+    }
+
+    &::after {
+        transition: right 0.3s 0.05s;
+    }
+
+    span {
+        transition: width 0.3s, right 0.3s 0.05s;
+    }
+
+}
+
+.button-prev:hover {
+
+    span {
+        width: 26px;
+    }
+
+    span,
+    &::before,
+    &::after {
+        left: -13px;
+    }
+}
+
+.button-next:hover {
+
+    span {
+        width: 26px;
+    }
+
+    span,
+    &::before,
+    &::after {
+        left: auto;
+        right: -13px;
+    }
+}
+
+.button-play {
+    width: 144px;
+    height: 144px;
+    background: $themeColorSecond;
+    border-radius: 50%;
+    overflow: hidden;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    &__title {
+        color: $fontColorSecond;
+        font-size: 1.7rem;
+        font-family: $fontSecond;
+        letter-spacing: 0.075em;
+        transform: translateX(-200%);
+        opacity: 0;
+        display: inline-block;
+        will-change: transform, opacity;
+        transition: transform 0.3s ease,
+                    opacity 0.3s ease;
+    }
+
+    &__icon {
+        display: block;
+        width: 0;
+        height: 0;
+        border-style: solid;
+        border-width: 15px 0 15px 25px;
+        border-color: transparent transparent transparent $fontColorSecond;
+        position: absolute;
+        top: 51%;
+        left: 51%;
+        transform: translate(-50%, -50%) scale(1);
+        transition: transform 0.3s ease;
+    }
+}
+
+.button-play:hover {
+
+    .button-play__title {
+        transform: translateX(0);
+        opacity: 1;
+    }
+
+    .button-play__icon {
+        transform: translate(-50%, -50%) scale(0);
+    }
+}

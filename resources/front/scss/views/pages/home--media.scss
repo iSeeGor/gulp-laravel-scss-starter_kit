@@ -1,0 +1,573 @@
+@media (max-width: 1199.98px) { 
+
+	.benefits {
+
+		&__right {
+			flex: 0 0 340px;
+			max-width: 340px;
+		}
+
+		&__left {
+			margin-right: 110px;
+		}
+
+		&__item_comfort {
+			margin-bottom: 55px;
+		}
+	}
+
+	.factories {
+		padding: 95px 0 110px;
+
+		&__info-block {
+			right: -190px;
+		}
+	}
+
+	.testimonials {
+		padding-bottom: 70px;
+
+		&::before {
+			top: 76px;
+		}
+
+		.block-title {
+			margin-bottom: 40px;
+			margin-left: 140px;
+		}
+
+		&__thumbnails {
+			height: 275px;
+			max-width: 860px;
+
+			.swiper-container {
+				width: 715px;
+			}
+		}
+
+		.testimonials-thumb {
+			width: 155px;
+		}
+
+		.swiper-slide-active .testimonials-thumb,
+		.swiper-slide-duplicate-active .testimonials-thumb {
+			height: 275px;
+			width: 190px;
+		}
+
+		&__body {
+			height: 350px;
+			max-width: 640px;
+    		margin: 0 auto;
+		}
+
+		&__body .swiper-slide {
+			flex-direction: column;
+		}
+
+		&__user-bio,
+		&__user-loc {
+			flex: 0 0 auto;
+			max-width: 100%;
+			display: flex;
+		}
+
+		&__user-bio {
+			order: 1;
+			margin-bottom: 10px;
+		}
+
+		&__user-loc {
+			order: 2;
+			margin-bottom: 10px;
+			font-size: 20px;
+		}
+
+		&__content {
+			order: 3;
+			margin-right: 0;
+		}
+
+		&__user-name,
+		&__user-city {
+			&::after {
+				content: ',';
+				display: inline;
+				margin-right: 4px;
+			}
+		}
+
+		&__pagination {
+			max-width: 640px;
+			margin-left: auto;
+			margin-right: auto;
+		}
+	}
+
+	.home-transfer {
+		
+		.block-form {
+			max-width: 520px;
+		}
+
+		.map-holder {
+			max-width: 620px;
+		}
+	}
+
+	.text-sec-w-circle {
+		padding: 130px 0 90px;
+	}
+
+	.home-shopping {
+
+		.container::after {
+			left: -795px;
+		}
+	}
+
+	.sale {
+
+		&__content {
+			padding-top: 90px;
+		}
+	}
+}
+@media (max-width: 991.98px) { 
+
+	.about-company {
+		margin-bottom: 90px;
+
+		.block-title {
+			margin-bottom: 30px;
+		}
+
+		.text-block--deco {
+			margin-top: 60px;
+		}
+
+		.text-block__circle {
+			width: 200px;
+			height: 200px;
+			left: -45px;
+		}
+	}
+
+	.benefits {
+		margin-bottom: 90px;
+
+		&__inner {
+			padding-left: 190px;
+
+			&::before {
+				left: -380px;
+				background-position-x: 70px;
+			}
+		}
+
+		.block-title {
+			margin-bottom: 30px;
+		}
+		
+
+		&__content {
+			display: block;
+		}
+
+		&__left {
+			max-width: 100%;
+			margin-right: 0;
+		}
+
+		&__right {
+			max-width: 100%;
+		}
+
+		&__item-title {
+			margin-left: 0 !important;
+			max-width: 100% !important;
+		}
+
+		&__item_comfort {
+			margin-bottom: auto;
+		}
+	}
+
+	.factories {
+		padding: 70px 0 70px;
+
+		&__info-block {
+			max-width: 100%;
+		}
+
+		&__info-block::before {
+			width: 130px;
+		}
+
+		&__title .custom-word {
+			font-size: 8rem;
+		}
+
+	}
+
+	.factories-list {
+		flex-wrap: wrap;
+		align-items: center;
+
+		&__item:nth-last-child(-n+2) {
+			position: static;
+		}
+
+		&__item {
+			margin-bottom: 30px;
+		}
+	}
+
+	.factories-list__item:last-child {
+		margin-right: auto;
+		margin-left: 50px;
+	}
+
+	.home-transfer {
+
+		.container {
+			padding-bottom: 90px;
+		}
+
+		.container::before {
+			left: 50%;
+			transform: translateX(-50%);
+		}
+		
+		.block-form {
+			position: static;
+			max-width: 100%;
+			
+			&__inner {
+				padding: 50px 70px 50px;
+			}
+		}
+
+		.map-holder {
+
+			max-width: 100%;
+			height: 460px;
+		}
+		
+	}
+
+	.testimonials {
+
+		padding-bottom: 50px;
+		&::before {
+			top: 72px;
+		}
+
+		.block-title {
+			margin-left: 0;
+		}
+
+		&__thumbnails .swiper-container {
+			width: 615px;
+			left: 14px;
+		}
+
+		.swiper-slide-active .testimonials-thumb, .swiper-slide-duplicate-active .testimonials-thumb {
+			width: 175px;
+			height: 255px;
+		}
+
+		.testimonials-thumb {
+			width: 145px;
+			height: 225px;
+		}
+
+		&__body,
+		&__pagination,
+		.block-title {
+			max-width: 580px;
+			margin-left: auto;
+			margin-right: auto;
+		}
+
+		&__pagination {
+			margin-top: 35px;
+		}
+	}
+
+	.home-transfer {
+
+		.container::after {
+			top: -80px;
+			width: 295px;
+			height: 180px;
+		}
+	}
+
+	.text-sec-w-circle {
+		padding: 70px 0 90px;
+
+		.n-col-4_12 .text-block {
+			margin-bottom: 90px;
+		}
+	}
+
+	.home-shopping {
+		.figure {
+			display: none;
+		}
+
+		&__content {
+			padding-bottom: 40px;
+			picture {
+				display: block;
+				img {
+					margin:  0;
+				}
+			}
+		}
+	}
+
+	.sale__content {
+		padding-top: 60px;
+	}
+
+	.sale {
+
+		&__left-block {
+			flex: 0 0 100%;
+			max-width: 100%;
+
+			.text-block {
+				// margin-bottom: 25px;
+			}
+		}
+
+		&__right-block {
+			flex: 0 0 100%;
+			max-width: 100%;
+			order: -1;
+
+			.text-block {
+				// margin-bottom: 25px;
+			}
+
+			.figure {
+				display: none;
+			}
+		}
+
+		.text-block__circle {
+			width: 400px;
+    		height: 400px;
+		}
+	}
+
+}
+@media (max-width: 767.98px) {
+
+	.about-company {
+		margin-bottom: 70px;
+	}
+	
+	.benefits {
+		margin-bottom: 70px;
+
+		&__inner {
+			padding-left: 0;
+		}
+
+		&__inner::before {
+			position: static;
+			display: block;
+			background-position-x: 0;
+			margin: 0 0 60px 0 ;
+			height: 300px;
+			width: 100%;
+			background-size: cover;
+		}
+	}
+
+	.factories {
+		padding-bottom: 50px;
+
+		&__info-block {
+			right: 0;
+			margin-bottom: 50px;
+
+			&::before {
+				display: none;
+			}
+		}
+
+		&__title {
+			margin-bottom: 25px;
+
+			.custom-word {
+				font-size: 6rem;
+			}
+		}
+	}
+
+	.factories-list {
+
+		justify-content: center;
+
+		&__item {
+			flex: 0 0 50%;
+			padding: 0 40px;
+			text-align: center;
+
+			img {
+				// width: 100%;
+				// max-width: inherit;
+			}
+		}
+	}
+
+	.testimonials {
+		padding-bottom: 100px;
+
+		&__thumbnails {
+
+			.swiper-container {
+				margin-left: 30px;
+				margin-right: 30px;
+				width: auto;
+				left: 0;
+			}
+		}
+
+		.swiper-slide-active .testimonials-thumb, .swiper-slide-duplicate-active .testimonials-thumb {
+			transform: translateX(10px);
+		}
+
+		&__control {
+			padding: 20px 0;
+		}
+
+	}
+
+	.home-transfer {
+
+		.container {
+			padding-bottom: 70px;
+
+			&::after {
+				top: -130px;
+			}
+		}
+
+		.block-form__inner {
+			padding: 40px 50px 40px;
+		}
+	}
+
+	.text-sec-w-circle {
+		padding: 70px 0 70px;
+
+	}
+
+	.sale {
+		.text-block {
+			margin-bottom: 60px;
+		}
+	}
+
+	.factories-list__item:last-child {
+		margin-right: inherit;
+		margin-left: inherit;
+	}
+}
+@media (max-width: 575.98px) {  
+	.about-company .text-block--deco {
+		margin-top: 40px;
+	}
+
+	.text-sec-w-circle {
+
+		.n-col-4_12 .text-block {
+			margin-bottom: 40px;
+		}
+	}
+
+	.sale {
+		.text-block {
+			margin-bottom: 40px;
+		}
+	}
+}
+
+@media (max-width: 520px) {
+
+	.testimonials {
+		&__thumbnails {
+
+			.swiper-container {
+				margin-left: 20px;
+				margin-right: 20px;
+			}
+		}
+
+	}
+
+	.home-transfer .block-form__inner {
+		padding: 40px 30px 40px;
+	}
+}
+
+@media (max-width: 475px) {
+	.testimonials {
+
+		&__thumbnails {
+			margin-bottom: 20px;
+		}
+
+		.testimonials-thumb {
+			width: 175px !important;
+			height: 255px !important;
+			margin-left: 30px !important;
+			
+			img {
+				opacity: 1;
+			}
+		}
+	}
+}
+
+
+@media (max-width: 440px) { 
+	.factories {
+		padding-bottom: 25px;
+	} 
+
+	.factories-list {
+
+		&__item {
+			flex: 0 0 100%;
+			margin-bottom: 65px;
+		}
+
+		&__image {
+			transform: scale(0.8);
+		}
+	}
+
+	.benefits {
+
+		&__inner::before {
+			height: 220px;
+		}
+	}
+
+	.testimonials .swiper-slide-active .testimonials-thumb, 
+	.testimonials .swiper-slide-duplicate-active .testimonials-thumb {
+		transform: none;
+		margin: 0 auto !important;
+	}
+
+}
+
+@media (max-width: 375.98px) {  
+
+}

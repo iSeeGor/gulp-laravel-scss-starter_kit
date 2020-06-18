@@ -1,0 +1,110 @@
+/*============================================================================
+	#Catalog Carousele
+==============================================================================*/
+
+.catalog-carousele {
+	display: flex;
+	// flex-wrap: wrap;
+	max-width: 950px;
+
+	&__header {
+		flex: 1 1 auto;
+		font-family: $fontSecond;
+		padding: 40px 0;
+	}
+
+	&__title {
+		font-size: 3.0rem;
+		line-height: 3.6rem;
+		margin-bottom: 45px;
+		
+	}
+
+	&__control {
+		display: flex;
+		justify-content: flex-end;
+		padding-right: 10px;
+		
+		.button {
+			margin: 0 18px;
+		}
+	}
+
+	.button {
+		transition: opacity;
+	}
+
+	.swiper-button-disabled {
+		opacity: .3;
+	}
+
+	&__container {
+		max-width: 786px;
+		margin: 0;
+		padding: 0 30px;
+		flex: 0 0 786px;
+	}
+
+	&__item {
+
+		&:hover {
+			.catalog-carousele__figure::before {
+				opacity: 1;
+			}
+		}
+	}
+
+	&__figure {
+		margin: 0;
+		width: 222px;
+		height: 300px;
+		margin-bottom: 30px;
+		position: relative;
+		z-index: 1;
+
+		&::before {
+			content: '';
+			width: 286px;
+			height: 300px;
+			background: url('/assets/images/theme/deco-square-l.svg') no-repeat center/cover;
+			position: absolute;
+			z-index: -1;
+			top: 30px;
+			left: 50%;
+			transform: translateX(-50%);
+			will-change: opacity;
+			opacity: 0;
+			transition: opacity 0.2s;
+		}
+		
+	}
+
+	&__image {
+		width: 100%;
+		height: 100%;
+		object-fit: cover;
+	}
+
+	&__link {
+		text-decoration: none;
+		color: inherit;
+		display: block;
+
+		&:hover {
+			color: $fontColorSecond;
+
+			.catalog-carousele__figure {
+				&::before {
+					// opacity: 1;
+				}
+			}
+		}
+		
+	}
+
+	&__caption {
+		text-align: center;
+		font-size: 1.6rem;
+		letter-spacing: 0.1em;
+	}
+}

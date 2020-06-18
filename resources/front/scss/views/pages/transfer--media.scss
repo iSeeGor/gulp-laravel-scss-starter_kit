@@ -1,0 +1,370 @@
+
+@media (max-width: 1199.98px) {
+	.transfer-page {
+		.factories {
+			padding-bottom: 90px;
+		}
+	}
+
+	.transfer-about {
+
+		&__media {
+
+			img {
+				right: 0;
+			}
+		}
+	}
+
+	.transfer-stages {
+		margin-bottom: 90px;
+
+		.container {
+			padding-bottom: 50px;
+		}
+
+		.col-md-4 {
+			padding-right: 5px;
+			padding-left: 5px;
+		}
+
+		&__item {
+			height: 100%;
+			margin-bottom: 0;
+		}
+
+		&__media {
+			margin-right: 15px;
+			img {
+				width: 118px;
+				height: 100%;
+    			object-fit: cover;
+			}
+		}
+	}
+
+	.transfer-about {
+		padding-bottom: 110px;
+	}
+
+	.transfer-carousele {
+
+		.container {
+			padding-bottom: 115px;
+			&::after {
+				left: -470px;
+				height: 170px;
+			}
+		}
+	}
+
+	.transfer-text-block {
+		margin-bottom: 60px;
+	}
+
+	.transfer-date-time {
+		padding-bottom: 130px;
+
+		&__content {
+			padding-top: 180px;
+		}
+
+		.section-deco-name__left {
+			display: block !important;
+		}
+	}
+
+}
+
+@media (max-width: 991.98px) {
+	.transfer-page {
+		.factories {
+			padding-bottom: 70px;
+		}
+	}
+
+	.transfer-info {
+		padding-top: 100px;
+
+		&__description {
+			margin-bottom: 30px;
+		}
+
+		&__media-block {
+
+			margin-bottom: 40px;
+			&::after {
+				right: auto;
+				left: 80px;
+				width: 540px;
+				background-size: contain;
+				background-repeat: no-repeat;
+			}
+
+			&::before {
+				top: -50px;
+				height: 300px;
+				left: 260px;
+			}
+		}
+		
+
+		&__media {
+			padding-left: 100px;
+			margin-top: 0;
+
+			img {
+				width: 360px;
+			}
+		}
+	}
+
+	.transfer-stages {
+
+		.container {
+			padding-bottom: 50px;
+		}
+
+		.col-md-4 {
+			padding-right: 15px;
+			padding-left: 15px;
+		}
+
+		&__item {
+			height: auto;
+			flex-wrap: wrap;
+		}
+
+		&__media {
+			margin-right: 0px;
+			flex: 1 1 100%;
+			margin-bottom: 30px;
+			
+			img {
+				width: 100%;
+				height: inherit;
+    			object-fit: cover;
+			}
+		}
+	}
+
+	.transfer-about {
+		padding-bottom: 90px;
+
+		&__media {
+
+			img {
+				position: static;
+			}
+		}
+
+		.button {
+			margin-bottom: 50px;
+		}
+	}
+
+	.transfer-carousele {
+
+		.container {
+			padding-top: 0;
+			padding-bottom: 60px;
+
+			&::before {
+				top: 115px;
+				left: 50px;
+				width: 800px;
+			}
+
+			&::after {
+				display: none;
+			}
+		}
+
+		.catalog-carousele__header {
+			margin-bottom: 50px;
+		}
+	}
+
+	.transfer-text-block {
+
+		.container {
+			&::before {
+				display: none;
+			}
+		}
+
+		.figure {
+			display: none;
+		}
+	}
+
+	.transfer-date-time {
+
+		.figure {
+
+			.image {
+				position: static;
+				max-width: 100%;
+			}
+		}
+
+		.section-deco-name__left {
+			top: -70px;
+			right: 0;
+		}
+
+		&__content {
+			padding-top: 90px;
+		}
+
+		padding-bottom: 100px;
+	}
+
+	.transfer-block .block-form__inner {
+		padding: 70px 64px 50px 64px;
+	}
+}
+
+@media (max-width: 767.98px) {
+	.transfer-page {
+		.factories {
+			padding-bottom: 40px;
+		}
+	}
+
+	.transfer-info {
+		padding-top: 60px;
+		
+		&__title {
+			font-size: 3.2rem;
+			margin: 0 0 25px 0;
+		}
+
+		&__media-block {
+
+			&::after {
+				left: 40px;
+			}
+
+			&::before {
+				left: 220px;
+			}
+		}
+
+		&__media {
+			padding-left: 50px;
+		}
+	}
+
+	.transfer-stages {
+		margin-bottom: 70px;
+
+		.container {
+			padding-bottom: 30px;
+		}
+
+		&__item {
+			flex-wrap: nowrap;
+		}
+
+		&__media {
+			flex: 0 0 auto;
+			margin-right: 30px;
+		}
+	}
+
+	.transfer-about {
+		padding-bottom: 70px;
+
+		&__media img {
+			max-width: 100%;
+		}
+	}
+
+	.transfer-carousele {
+
+		.container {
+			padding-top: 0;
+			padding-bottom: 40px;
+
+		}
+	}
+
+
+}
+
+@media (max-width: 575.98px) {
+	.transfer-info {
+
+		&__title {
+			font-size: 3.0rem;
+			margin: 0 0 25px 0;
+		}
+
+		&__media-block {
+
+			&::after {
+				display: none;
+			}
+
+		}
+
+	}
+
+	.transfer-date-time {
+		padding-bottom: 70px;
+
+		&__content {
+			padding-top: 50px;
+		}
+	}
+}
+
+@media (max-width: 475.98px) {
+	.transfer-info {
+
+		&__media {
+			padding-left: 0;
+
+			img {
+				width: auto;
+				max-width: 100%;
+			}
+		}
+
+	}
+
+	.transfer-text-block {
+		margin-bottom: 0;
+		padding-bottom: 70px;
+	}
+
+	.transfer-date-time .section-deco-name__left {
+		display: none !important;
+	}
+}
+
+@media (max-width: 375.98px) {
+	.transfer-info {
+
+		&__media-block {
+
+			&::before {
+				display: none;
+			}
+		}
+
+	}
+}
+
+@media (max-width: 345px) {
+	.transfer-stages__item {
+		flex-wrap: wrap;
+		margin-bottom: 45px;
+	}
+
+	.transfer-stages__media {
+		flex: 1 1 auto;
+		margin-right: 0;
+	}
+}

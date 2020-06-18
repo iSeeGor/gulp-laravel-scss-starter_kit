@@ -1,0 +1,116 @@
+/*============================================================================
+	#Post
+==============================================================================*/
+
+/*================ Post Main ================*/
+
+/*================ Post Header ================*/
+.post__header {
+	padding-top: 40px;
+	padding-bottom: 30px;
+}
+
+.post-header {
+	max-width: 730px;
+	margin: 0 auto;
+
+	&__title {
+		font: normal 3.0rem/3.6rem $fontSecond;
+		color: #000000;
+		margin: 0 0 15px 0;
+	}
+
+	&__meta {
+		display: flex;
+		justify-content: space-between;
+	}
+
+	&__meta-link {
+		color: $fontColorMain;
+		text-decoration: none;
+
+		&:active,
+		&:visited {
+			color: $fontColorMain;
+		}
+
+		&:hover {
+			text-decoration: underline;
+		}
+	}
+
+	&__meta-category {
+		white-space: nowrap;
+		text-overflow: ellipsis;
+		overflow: hidden;
+	}
+	
+	&__meta-date {
+		font: normal 1.6rem/3.0rem $fontSecond;
+		flex: 0 0 100px;
+		text-align: right;
+		margin-left: 20px;
+	}
+}
+
+/*================ Post Thumbnail ================*/
+.post__thumbnail {
+
+}
+
+.post-thumb {
+	max-width: 730px;
+	margin: 0 auto;
+	padding: 0 30px;
+}
+
+/*================ Post Content ================*/
+.post__content {
+	max-width: 760px;
+	margin: 0 auto;
+	padding: 65px 0 60px;
+}
+
+.post__typography {
+	*:first-child {
+		margin-top: 0;
+		padding-top: 0;
+	}
+
+	.responsive-iframe {
+
+        iframe {
+            width: calc(100% - 60px);
+		}
+		
+	}
+	
+	img {
+		padding: 0 30px;
+	}
+}
+
+/*================ Post Share ================*/
+.post__share {
+	padding: 22px 0;
+	margin-top: 60px;
+	margin: 0 auto;
+	border-top: 2px solid black
+}
+
+.share {
+	display: flex;
+	flex-wrap: wrap;
+    justify-content: flex-end;
+    align-items: center;
+
+    &__title {
+        font-family: $fontSecond;
+		margin-right: 25px;
+		font-size: 1.6rem;
+	}
+	
+	&__body {
+		margin-right: 12px;
+	}
+}

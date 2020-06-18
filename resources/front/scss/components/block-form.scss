@@ -1,0 +1,57 @@
+/*============================================================================
+	#Block Form
+==============================================================================*/
+.block-form {
+	max-width: 540px;
+	background: white;
+
+	&__inner {
+		padding: 70px 64px 50px;
+	}
+
+	&__title {
+		font-family: $fontSecond;
+		font-size: 2.4rem;
+		line-height: 3.0rem;
+		margin-bottom: 18px;
+	}
+
+	&__header {
+		margin-bottom: 54px;
+	}
+
+	.button_primary {
+		margin-top: 10px;
+	}
+}
+
+@media (max-width: 520px) {
+	
+	.block-form__title {
+		font-size: 2.2rem;
+		line-height: 2.8rem;
+		margin-bottom: 14px;
+	}
+
+	.block-form {
+
+		&__inner {
+			padding: 50px 40px !important;
+		}
+
+		.textarea_nuri {
+			
+		}
+	}
+}
+
+@media (max-width: 374.98px) {
+	
+
+	.block-form {
+
+		&__inner {
+			padding: 20px 15px !important;
+		}
+	}
+}

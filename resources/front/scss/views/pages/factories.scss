@@ -1,0 +1,200 @@
+/*============================================================================
+	#Factories Page
+==============================================================================*/
+
+/*================ Factories Page Common ================*/
+.factories-page {
+	
+
+}
+
+/*================ Factories Intro ================*/
+.factories-intro {
+	background: $themeColorMain;
+	padding-bottom: 100px;
+
+	&__header {
+		display: flex;
+		max-width: 980px;
+		margin: 0 auto;
+		padding-top: 85px;
+		padding-bottom: 85px;
+		position: relative;
+		z-index: 1	;
+
+		&-left,
+		&-right {
+			flex: 0 0 50%;
+			max-width: 50%;
+		}
+
+		&-left {
+			padding: 0 15px;
+		}
+
+		&-right {
+			padding: 0 30px;
+		}
+	}
+
+	&__title {
+		font-size: 3.6rem;
+		line-height: 4.8rem;
+		font-family: $fontSecond;
+		font-weight: normal;
+		// position: relative;
+		z-index: 1;
+		margin: 0;
+		padding-top: 30px;
+		max-width: 350px;
+		margin-left: auto;
+
+		&::before {
+			content: '';
+			position: absolute;
+			height: 290px;
+			width: 280px;
+			background: $themeColorSecond;
+			top: 0;
+			left: 0;
+			z-index: -1;
+
+		}
+
+		.factorie-name {
+			font-size: 6rem;
+			line-height: 6.4rem;
+			color: $fontColorSecond;
+		}
+	}
+
+	&__logo {
+		background: #efefef;
+		margin: 0;
+		margin-left: auto;
+		width: 410px;
+		height: 210px;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		position: relative;
+		z-index: 1;
+
+		&::before {
+			content: '';
+			position: absolute;
+			border: 2px solid $fontColorMain;
+			width: 93.5%;
+			height: 89%;
+			top: 50%;
+			left: 50%;
+			transform: translate(-50%, -50%);
+		}
+	}
+
+	&__content {
+		display: flex;
+		max-width: 980px;
+		margin: 0 auto;
+
+		&-left,
+		&-right {
+			flex: 0 0 50%;
+			max-width: 50%;
+		}
+	}
+
+	&__content-left {
+
+		.text-block {
+			max-width: 430px;
+		}
+	}
+
+	&__content-right {
+
+		.text-block {
+			max-width: 440px;
+			margin-left: auto;
+		}
+	}
+	
+}
+
+/*================ Factories Video Block ================*/
+.factories-page__video-block {
+	padding: 80px 0 80px;
+
+	.container {
+		position: relative;
+
+		&::before {
+			content: '';
+			position: absolute;
+			top: -120px;
+    		left: 54%;
+			width: 100%;
+			height: 100%;
+			background: $themeColorMain;
+		}
+	}
+
+	.block-title {
+		margin-bottom: 55px;
+	}
+	
+	.text-block {
+		padding-right: 20px;
+	}
+	
+	.video-block {
+		margin-left: auto;
+	}
+	
+	.section__circle {
+		width: 540px;
+		height: 540px;
+		top: 40px;
+		left: -460px;
+	}
+}
+
+/*================ Factories Slider ================*/
+.factories-page {
+	
+	&__slider.slider {
+		padding-top: 70px;
+		padding-bottom: 175px;
+	}
+}
+
+/*================ Factories Text Block ================*/
+.factories-page__text-block {
+
+	.container {
+		position: relative;
+		z-index: 1;
+
+		&::before {
+			content: '';
+			position: absolute;
+			width: 100%;
+			height: 100%;
+			top: 0;
+			right: -930px;
+			background: $themeColorMain;
+			z-index: -1;
+		}
+	}
+
+	.text-block {
+		margin-bottom: 90px;
+	}
+}
+
+/*================ Factories Text Block ================*/
+.factories-page__carousele {
+
+	padding: 100px 0 165px;
+	background: $themeColorMain;
+}

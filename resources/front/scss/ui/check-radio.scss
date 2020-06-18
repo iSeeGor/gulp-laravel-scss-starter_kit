@@ -1,0 +1,54 @@
+.checkbox,
+.radio {
+    appearance: none;
+    position: relative;
+    top: 0px;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    height: 18px;
+    width: 18px;
+    transition: all 0.15s ease-out 0s;
+    background: #aec5e0;
+    color: #fff;
+    cursor: pointer;
+    display: inline-block;
+    margin-right: 20px;
+    outline: none;
+    position: relative;
+    z-index: 1;
+}
+.checkbox:hover,
+.radio:hover {
+    background: #9dbbff57;
+}
+.checkbox:checked, 
+.radio:checked {
+    // background: #d9f8eb;
+}
+.checkbox:checked::before,
+.radio:checked::before {
+    content: '';
+    height: 14px;
+    width: 19px;
+    position: absolute;
+    bottom: 4px;
+    right: -14px;
+    transform: translate(-50%, 0);
+    background-image: url('/assets/img/theme/icons/checkbox.svg');
+    background-size: 19px 14px;
+}
+.checkbox:checked::after,
+.radio:checked::after {
+    content: "";
+    display: block;
+    position: relative;
+    z-index: 100;
+    border-radius: 4px;
+}
+.radio {
+    border-radius: 50%;
+}
+.radio::after {
+    border-radius: 50%;
+}

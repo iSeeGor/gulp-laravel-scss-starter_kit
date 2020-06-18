@@ -1,0 +1,97 @@
+.select {
+    position: relative;
+    width: 100%;
+    border-bottom: 2px solid #d9dde8;
+    padding: 6px 4px;
+    cursor: pointer;
+
+    &::after {
+        content: '';
+        position: absolute;
+        right: 0;
+        top: 20px;
+        border: 0.45rem solid transparent;
+        border-top: 0.43rem solid #a5a7ae;
+        transition: transform 0.5s ease;
+        transform-origin: center 0.1rem;
+    }
+
+    &.open::after {
+        transform: rotate(180deg);
+        transform-origin: center 0.1rem;
+    }
+
+    .list {
+        background-color: #fff;
+        margin: 0;
+        opacity: 0;
+        overflow: hidden;
+        padding: 8px 0;
+        pointer-events: none;
+        position: absolute;
+        top: 38px;
+        left: 0px;
+        transform-origin: 50% 0;
+        transition: all 0.2s cubic-bezier(0.5, 0, 0, 1.25), opacity 0.15s ease-out;
+        z-index: 9;
+        border: 1px solid #dcdcdc;
+        border-radius: 3px;
+        max-height: 300px;
+        height: auto;
+        width: 100%;
+        overflow-y: visible;
+    }
+
+    .option {
+        color: #6f727c;
+        font-weight: normal;
+        font-size: 1.3rem;
+        cursor: pointer;
+        list-style: none;
+        outline: none;
+        padding: 4px 20px;
+        text-align: left;
+        transition: all 0.2s ease; 
+    }
+}
+
+.select_theme {
+
+    .select2-container {
+        &::before,
+        &::after {
+            position: absolute;
+            z-index: 1;
+            bottom: 1px;
+            left: 0;
+            width: 1px;
+            height: 14px;
+            content: '';
+            background: #cdcdcd;
+        }
+
+        &::after {
+            left: auto;
+            right: 0;
+        }
+    } 
+
+    .select2-selection--single {
+        height: auto;
+    }
+
+    .select2-selection {
+        border: none;
+        border-bottom: 1px solid #20262b;
+        border-radius: 0;
+    }
+
+    .select2-selection__rendered {
+        line-height: inherit !important;
+        padding: 6px 20px 6px 13px !important;
+    }
+
+    .select2-selection__rendered {
+        // color: #a9a9a9 !important;
+    }
+}

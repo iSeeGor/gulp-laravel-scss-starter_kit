@@ -1,0 +1,27 @@
+/*============================================================================
+	#Global
+==============================================================================*/
+html {
+	box-sizing: border-box;
+	height: 100%;
+}
+
+*,
+*:before,
+*:after {
+	box-sizing: inherit;
+}
+
+body {
+	background: white;
+	height: 100%;
+}
+
+img {
+	height: auto;
+	max-width: 100%;
+}
+
+svg {
+	vertical-align: top;
+}

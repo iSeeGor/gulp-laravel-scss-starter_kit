@@ -1,0 +1,75 @@
+/*============================================================================
+	#Breadcrumbs
+==============================================================================*/
+.breadcrumbs {
+    padding: 25px 0;
+
+    &__list {
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        margin: 0;
+        padding: 0;
+        max-width: 90%;
+    }
+
+    &__item {
+        display: flex;
+        align-items: center;
+        color: #959595;
+        position: relative;
+        font-size: 1.4rem;
+        line-height: 2.4rem;
+        letter-spacing: 0;
+        padding-right: 8px;
+        margin-right: 6px;
+        flex: 0 0 auto;
+
+        &::after {
+            content: '';
+            position: absolute;
+            right: 0;
+            top: 50%;
+            width: 1px;
+            height: 16px;
+            background-color: #565656;
+            transform: translateY(-50%) rotate(26deg);
+        }
+
+        &:last-child {
+
+            &::after {
+                display: none;
+            }
+        }
+
+        &.current {
+            white-space: nowrap;
+            text-overflow: ellipsis;
+            min-width: 100px;
+            overflow: hidden;
+            display: block;
+            flex: 1;
+        }
+
+    }
+
+    &__link {
+        display: inline-block;
+        display: flex;
+        align-items: center;
+        text-decoration: none;
+        color: #565656;
+
+        &:active,
+        &:visited {
+            color: #565656;
+        }
+        
+        &:hover {
+            text-decoration: underline;
+        }
+    }
+
+
+}
